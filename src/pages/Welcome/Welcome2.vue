@@ -1,6 +1,6 @@
 <template>
   <div>
-    <WelcomeInfoVue class={#icon-welfare_2} title={限时秒杀，福利专场}></WelcomeInfoVue>
+    <WelcomeInfoVue svg="#icon-welfare_2" title="限时秒杀，福利专场"></WelcomeInfoVue>
   </div>
 </template>
 <script setup lang='ts'>

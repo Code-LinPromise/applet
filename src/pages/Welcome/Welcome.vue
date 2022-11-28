@@ -25,8 +25,6 @@ import { RouterView } from "vue-router";
   align-items: center;
   .info{
     width: 90%;
-    align-items: center;
-    display: flex;
     flex-grow: 1;
     background-color: white;
     border-radius: 16px;

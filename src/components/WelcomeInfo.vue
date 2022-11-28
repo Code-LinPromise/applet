@@ -1,9 +1,9 @@
 <template>
-    <div class="info">
-    <svg class="icon" aria-hidden="true">
-        <use xlink:href={svg}></use>
+    <div class="wrraper">
+    <svg class="icon logoWelcome1" aria-hidden="true">
+        <use :xlink:href=svg></use>
     </svg>
-    <span>{{title}}</span>
+    <span class="font">{{title}}</span>
     </div>
 </template>
 <script setup lang='ts'>
@@ -13,8 +13,21 @@
  })
 </script>
 <style scope lang='scss'>
- .info{
+ .wrraper{
     display: flex;
     flex-flow: column;
+    width: 100%;
+    align-items: center;
+    .font{
+        text-align: center;
+        color: black;
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 30px;
+        }
+    .logoWelcome1{
+        margin-top: 100px;
+    }
  }
+ 
 </style>

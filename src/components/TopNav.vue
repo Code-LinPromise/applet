@@ -17,13 +17,6 @@
         align-items: center;
         padding-top: 60px;
         flex-shrink: 0;
-        .icon {
-            width: 100px;
-            height: 100px;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
         .font{
             color: white;
             font-size: 32px;
