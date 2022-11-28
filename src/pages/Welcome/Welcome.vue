@@ -2,7 +2,7 @@
   <div class="welcome">
     <TopNav/>
     <div class="info">
-      
+      <RouterView/>
     </div>
     <div class="navBar">
       <span style="opacity: 0; ">跳过</span>
@@ -12,8 +12,8 @@
   </div>
 </template>
 <script setup lang='ts'>
-import TopNav from "../components/TopNav.vue"
-
+import TopNav from "../../components/TopNav.vue"
+import { RouterView } from "vue-router";
 </script>
 <style scope lang='scss'>
 .welcome{
