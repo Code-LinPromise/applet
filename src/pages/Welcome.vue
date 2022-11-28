@@ -1,8 +1,12 @@
 <template>
-  <Welcome/>
+  <div>
+    123
+  </div>
 </template>
 <script lang='ts'>
- import Welcome from "./Welcome.vue"
+
+
+
 </script>
 <style scope lang='scss'>
  
