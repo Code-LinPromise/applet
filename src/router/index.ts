@@ -4,8 +4,14 @@ const Welcome=()=>import("../pages/Welcome.vue")
 
 
 const routes=[
-    {path: '/', component: Welcome},
-
+    {path: '/', redirect:"/welcome1"},
+    {
+        path:"/welcome1",
+        component:Welcome,
+        children:[
+            
+        ]
+    }
 ]
 
 

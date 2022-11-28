@@ -1,8 +1,8 @@
 <template>
-  <Welcome/>
+    <RouterView/>
 </template>
 <script lang='ts'>
- import Welcome from "./Welcome.vue"
+import { RouterView } from "vue-router";
 </script>
 <style scope lang='scss'>
  
