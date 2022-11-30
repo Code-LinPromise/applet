@@ -1,7 +1,7 @@
 <template>
-  <div>
+    <div>
     <WelcomeInfoVue svg="#icon-anquan" title="最安全方便的校园二手市场"></WelcomeInfoVue>
-  </div>
+    </div>
 </template>
 <script setup lang='ts'>
  import WelcomeInfoVue from '../../components/WelcomeInfo.vue';
