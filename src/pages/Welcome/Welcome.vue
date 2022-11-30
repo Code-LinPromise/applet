@@ -2,7 +2,7 @@
   <div class="welcome">
     <TopNav/>
     <div class="info">
-      <RouterView v-slot="{ Component, route }">
+      <RouterView v-slot="{ Component }">
           <Transition enterFromClass="slide_fade_enter_from" enterActiveClass="slide_fade_enter_active"
             leaveToClass="slide_fade_leave_to" leaveActiveClass="slide_fade_leave_active">
             <component :is="Component" />
@@ -34,6 +34,7 @@ const refPath=ref("/welcome/1")
 onUpdated(()=>{
   const path=router.currentRoute.value.path
   refPath.value=path
+  console.log(refPath.value)
 })
 const router=useRouter()
 
