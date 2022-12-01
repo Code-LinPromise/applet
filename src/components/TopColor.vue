@@ -18,7 +18,12 @@
  defineProps({
     title:String,
     svg:String,
-    iconEvent:Function
+    iconEvent:{
+        type:Function,
+        defalut(){
+            return 0
+        }
+    }
  })
 
 </script>

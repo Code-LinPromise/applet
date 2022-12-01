@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1669626413375') format('truetype');
+  src: url('iconfont.ttf?t=1669804613909') format('truetype');
 }
 
 .iconfont {
@@ -9,6 +9,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yonghu:before {
+  content: "\e652";
+}
+
+.icon-liuyan:before {
+  content: "\e602";
 }
 
 .icon-welfare_2:before {
@@ -27,11 +35,19 @@
   content: "\e619";
 }
 
+.icon-zhifeiji:before {
+  content: "\e681";
+}
+
 .icon-anquan:before {
   content: "\e85c";
 }
 
 .icon-zuojiantou:before {
   content: "\e623";
+}
+
+.icon-goumaipianhao:before {
+  content: "\e7d3";
 }
 

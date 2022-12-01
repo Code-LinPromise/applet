@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "650809",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "880162",
+      "name": "留言",
+      "font_class": "liuyan",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
       "icon_id": "1225477",
       "name": "福利_2",
       "font_class": "welfare_2",
@@ -34,6 +48,13 @@
       "unicode_decimal": 58905
     },
     {
+      "icon_id": "6684369",
+      "name": "纸飞机",
+      "font_class": "zhifeiji",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
       "icon_id": "8288958",
       "name": "安全",
       "font_class": "anquan",
@@ -46,6 +67,13 @@
       "font_class": "zuojiantou",
       "unicode": "e623",
       "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "13119209",
+      "name": "购买偏好",
+      "font_class": "goumaipianhao",
+      "unicode": "e7d3",
+      "unicode_decimal": 59347
     }
   ]
 }

@@ -34,7 +34,6 @@ const refPath=ref("/welcome/1")
 onUpdated(()=>{
   const path=router.currentRoute.value.path
   refPath.value=path
-  console.log(refPath.value)
 })
 const router=useRouter()
 
