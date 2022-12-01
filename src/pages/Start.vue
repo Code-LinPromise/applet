@@ -25,6 +25,7 @@
       <img  src="../assets/SearchNone.png" alt="" class="searchNoneImg">
       <p class="searchNoneFont">暂无发现</p>
     </div>
+    <CommodityItem/>
     <FloatButton/>
   </div>
   
@@ -35,6 +36,7 @@ import { showToast ,Button} from "vant";
 import {useRouter} from "vue-router"
 import TopColor from "../components/TopColor.vue";
 import FloatButton from "../components/FloatButton.vue";
+import CommodityItem from "../components/CommodityItem.vue"
 const iconArray = [{ icon: "#icon-goumaipianhao", title: "偏好" },
 { icon: "#icon-liuyan", title: "留言" },
 { icon: "#icon-zhifeiji", title: "纸飞机" }]
