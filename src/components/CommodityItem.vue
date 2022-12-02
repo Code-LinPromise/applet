@@ -3,16 +3,16 @@
     <div class="commodityInfo">
         <div class="commodityName">
             <span class="nameColor"></span>
-            <span class="nameFont">铲屎官</span>
-            <span class="backGround"> &lt 5.0km </span>
+            <span class="nameFont">{{name}}</span>
+            <span class="backGround">{{distance}}</span>
         </div>
         <div class="commodityDetails">
             <span class="detailsColor"></span>
-            <span class="detailsFont">找到两样闲置物品，共耗时0.2h找到两样闲置物品，共耗时0.2h</span>
+            <span class="detailsFont">{{details}}</span>
         </div>
         <div class="commodityLocation">
             <span class="locationColor"></span>
-            <span class="locationFont">成华区 成都理工大学</span>
+            <span class="locationFont">{{location}}</span>
         </div>
     </div>
     <div class="commodityImg">
@@ -28,8 +28,14 @@
 <script setup lang='ts'>
  import { faker } from '@faker-js/faker';
 
- const cat=faker.image.animals()
- console.log(cat)
+ defineProps({
+    name:String,
+    distance:String,
+    details:String,
+    location:String
+ })
+const cat=faker.image.animals()
+
 </script>
 <style scope lang='scss'>
  .allItem{

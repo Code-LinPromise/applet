@@ -25,8 +25,8 @@
       <img  src="../assets/SearchNone.png" alt="" class="searchNoneImg">
       <p class="searchNoneFont">暂无发现</p>
     </div>
-    <CommodityItem/>
-    <FloatButton/>
+    
+    <FloatButton :onClick="goAddShoping"/>
   </div>
   
 </template>
@@ -41,8 +41,11 @@ const iconArray = [{ icon: "#icon-goumaipianhao", title: "偏好" },
 { icon: "#icon-liuyan", title: "留言" },
 { icon: "#icon-zhifeiji", title: "纸飞机" }]
 const router=useRouter()
+const goAddShoping=()=>{
+  router.push("/addshoping")
+}
 const goBack=()=>{
-    router.replace("./welcome")
+    router.replace("/welcome")
 }
 const searchClick=()=>{
   refIsLoding.value=true

@@ -5,6 +5,7 @@ const Welcome1=()=>import("../pages/Welcome/Welcome1.vue")
 const Welcome2=()=>import("../pages/Welcome/Welcome2.vue")
 const Welcome3=()=>import("../pages/Welcome/Welcome3.vue")
 const Start=()=>import("../pages/Start.vue")
+const AddShoping=()=>import("../pages/AddShoping.vue")
 
 const routes=[
     {path: '/', redirect:"/welcome"},
@@ -33,6 +34,10 @@ const routes=[
     {
         path:"/start",
         component:Start
+    },
+    {
+        path:"/addshoping",
+        component:AddShoping
     }
 ]
 

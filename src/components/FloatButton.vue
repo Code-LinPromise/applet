@@ -1,12 +1,17 @@
 <template>
-  <div class="floatButton">
+  <div class="floatButton" @click="onClick">
     <svg class="icon floatIcon" aria-hidden="true">
         <use xlink:href="#icon-tianjia"></use>
     </svg>
   </div>
 </template>
 <script setup lang='ts'>
- 
+ defineProps({
+  onClick:{
+    type:Function,
+    required: true
+  }
+ })
 </script>
 <style scope lang='scss'>
  .floatButton{
