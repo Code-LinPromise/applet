@@ -7,14 +7,18 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Button: typeof import('./src/components/Button.vue')['default']
     CommodityItem: typeof import('./src/components/CommodityItem.vue')['default']
     FloatButton: typeof import('./src/components/FloatButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TopColor: typeof import('./src/components/TopColor.vue')['default']
+    TopicItem: typeof import('./src/components/TopicItem.vue')['default']
     TopNav: typeof import('./src/components/TopNav.vue')['default']
-    VanPicker: typeof import('vant/es')['Picker']
+    VanCell: typeof import('vant/es')['Cell']
     VanSlider: typeof import('vant/es')['Slider']
+    VanSwitch: typeof import('vant/es')['Switch']
+    VanUploader: typeof import('vant/es')['Uploader']
     WelcomeInfo: typeof import('./src/components/WelcomeInfo.vue')['default']
   }
 }

@@ -7,10 +7,7 @@
 </template>
 <script setup lang='ts'>
  defineProps({
-  onClick:{
-    type:Function,
-    required: true
-  }
+  onClick:null
  })
 </script>
 <style scope lang='scss'>

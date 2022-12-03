@@ -14,16 +14,10 @@
   </div>
 </template>
 <script setup lang='ts'>
-
  defineProps({
     title:String,
     svg:String,
-    iconEvent:{
-        type:Function,
-        defalut(){
-            return 0
-        }
-    }
+    iconEvent:null
  })
 
 </script>
