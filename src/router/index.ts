@@ -6,6 +6,7 @@ const Welcome2=()=>import("../pages/Welcome/Welcome2.vue")
 const Welcome3=()=>import("../pages/Welcome/Welcome3.vue")
 const Start=()=>import("../pages/Start.vue")
 const AddShoping=()=>import("../pages/AddShoping.vue")
+const ReleaseFinish=()=>import("../pages/ReleaseFinish.vue")
 
 const routes=[
     {path: '/', redirect:"/welcome"},
@@ -38,6 +39,10 @@ const routes=[
     {
         path:"/addshoping",
         component:AddShoping
+    },
+    {
+        path:"/finish",
+        component:ReleaseFinish
     }
 ]
 

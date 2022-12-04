@@ -24,7 +24,7 @@
         </template>
       </van-cell>
     </div>
-    <Button title="叠好了，奋力扔出去" />
+    <Button title="叠好了，奋力扔出去" :onClick="goFinish" />
   </div>
 </template>
 <script setup lang='ts'>
@@ -33,8 +33,8 @@
  import Button from '../components/Button.vue';
  import {useRouter} from "vue-router"
 import { ref ,reactive,onUpdated} from 'vue';
- const topicArray=reactive(
-  ["找房子","寻找丢失","shoping"]
+ const topicArray=reactive<string[]>(
+  []
  )
  const checked=ref(false)
  const router=useRouter()
@@ -48,6 +48,9 @@ import { ref ,reactive,onUpdated} from 'vue';
 
  const goBack=()=>{
     router.back()
+ }
+ const goFinish=()=>{
+    router.push("./finish")
  }
  const AddTopic=()=>{
   topicArray.push(refValue.value)
