@@ -3,7 +3,7 @@
     <TopColor title="附近有闲" svg="#icon-zuojiantou" :iconEvent="goBack" />
     <div class="alltop">
       <ul class="iconArray">
-        <li v-for="item in iconArray" class="liIcon">
+        <li v-for="item in iconArray" class="liIcon" @click="unFinish">
           <svg class="icon arrayli" aria-hidden="true">
             <use :xlink:href=item.icon></use>
           </svg>
@@ -31,16 +31,22 @@
   
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
-import { showToast ,Button} from "vant";
+import {useAddData} from "../store/useAddData"
+import { ref,onUpdated } from "vue";
+import { showToast ,Button,showDialog } from "vant";
 import {useRouter} from "vue-router"
 import TopColor from "../components/TopColor.vue";
 import FloatButton from "../components/FloatButton.vue";
-import CommodityItem from "../components/CommodityItem.vue"
 const iconArray = [{ icon: "#icon-goumaipianhao", title: "偏好" },
 { icon: "#icon-liuyan", title: "留言" },
 { icon: "#icon-zhifeiji", title: "纸飞机" }]
 const router=useRouter()
+const store = useAddData()
+
+onUpdated(()=>{
+  store.max=refValue.value
+  console.log(store.max)
+})
 const goAddShoping=()=>{
   router.push("/addshoping")
 }
@@ -49,11 +55,24 @@ const goBack=()=>{
 }
 const searchClick=()=>{
   refIsLoding.value=true
-  
+  setTimeout(()=>{
+    router.push("./commodity")
+  },2000)
 }
 const refValue = ref(5);
 const refIsLoding=ref(false)
-    const onChange = (refValue:string) => showToast('选择当前范围：' + refValue+"km");
+const onChange = (refValue:string) => showToast('选择当前范围：' + refValue+"km");
+
+const unFinish=()=>{
+  showDialog({
+  title: '提示',
+  message: '暂未开发',
+  theme: 'round-button',
+  confirmButtonColor:"#63dcd3"
+}).then(() => {
+  // on close
+});
+}
 </script>
 <style scope lang="scss">
 .start{

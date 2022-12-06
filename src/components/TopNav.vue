@@ -3,7 +3,7 @@
     <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-eyu"></use>
     </svg>
-    <span class="font">易鱼购</span>
+    <span class="font">易物鱼</span>
   </div>
 </template>
 <script setup lang='ts'>

@@ -7,7 +7,7 @@
           <li v-for="item in topicArray" class="A-topic"><TopicItem :title="item"/></li>
        </ul>
        <p class="wish">自定义话题</p>
-       <div>
+       <div class="customizeAndaddTopic">
         <input type="text" placeholder="请输入你的话题" v-model="refValue" class="customize">
         <button class="addTopic" @click="AddTopic">添加</button>
        </div>
@@ -41,9 +41,8 @@ import { ref ,reactive,onUpdated} from 'vue';
  const refValue=ref("")
  
  const fileList = ref([
-      { url: 'https://fastly.jsdelivr.net/npm/@vant/assets/leaf.jpeg' },
-      
-      { url: 'https://cloud-image', isImage: true },
+      { url: 'https://img14.360buyimg.com/n1/s450x450_jfs/t1/209136/29/29246/39064/638dbe22E04446b64/baf64964928fe9cb.jpg.avif' },
+       
     ])
 
  const goBack=()=>{
@@ -83,7 +82,11 @@ import { ref ,reactive,onUpdated} from 'vue';
           margin-bottom: 15px;
         }
     }
-    .customize{
+    .customizeAndaddTopic{
+      display: flex;
+      flex-flow: row;
+      .customize{
+      
       width: 50vw;
       height: 3vh;
       margin-left: 15px;
@@ -95,6 +98,7 @@ import { ref ,reactive,onUpdated} from 'vue';
       padding-left: 5px;
     }
     .addTopic{
+      flex-shrink: 0;
       margin-left: 30px;
       padding: 5px 15px;
       background-color:#6cdcd3 ;
@@ -102,6 +106,8 @@ import { ref ,reactive,onUpdated} from 'vue';
       color: white;
       border-radius: 5px;
     }
+    }
+    
 
 
     }

@@ -4,7 +4,7 @@
         <div class="commodityName">
             <span class="nameColor"></span>
             <span class="nameFont">{{name}}</span>
-            <span class="backGround">{{distance}}</span>
+            <span class="backGround">&lt;{{distance}}km</span>
         </div>
         <div class="commodityDetails">
             <span class="detailsColor"></span>
@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="commodityImg">
-        <img :src="cat" alt="">
+        <img :src="image" alt="">
     </div>
     <div>
         <svg class="icon iconRight" aria-hidden="true">
@@ -26,15 +26,15 @@
   </div>
 </template>
 <script setup lang='ts'>
- import { faker } from '@faker-js/faker';
 
  defineProps({
     name:String,
-    distance:String,
+    distance:Number,
     details:String,
-    location:String
+    location:String,
+    image:String
  })
-const cat=faker.image.animals()
+
 
 </script>
 <style scope lang='scss'>
@@ -113,6 +113,7 @@ const cat=faker.image.animals()
         }
     }
     .commodityImg{
+        flex-shrink: 0;
         margin: 0 5px;
         width: 20vw;
         img{
