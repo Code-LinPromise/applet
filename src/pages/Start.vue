@@ -57,7 +57,7 @@ const searchClick=()=>{
   refIsLoding.value=true
   setTimeout(()=>{
     router.push("./commodity")
-  },2000)
+  },1000)
 }
 const refValue = ref(5);
 const refIsLoding=ref(false)
